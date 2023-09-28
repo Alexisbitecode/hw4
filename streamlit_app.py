@@ -29,5 +29,5 @@ st.subheader("Second Table")
 df2=df.groupby("test preparation course")[["math score", "reading score"]].mean()
 st.write("Test preparation course & Scores:")
 st.write(df2)
-st.write(""" We can see from the table that if students have completed the test preparation course, they usually will get higher scores in math and reading.""")
+st.write(""" We can see from the table that the average math and reading scores are higher for the students who have completed the test preparation course.""")
 
