@@ -5,7 +5,8 @@ import seaborn as sns  # Add this import statement
 
 # Load the data from a CSV file
 df = pd.read_csv("StudentsPerformance.csv")
-df1 = df.groupby("parental level of education").mean()
+df1 = df.groupby("parental level of education")[["math score", "reading score"]].mean()
+
 
 fig = plt.figure(figsize=(10, 6))
 sns.scatterplot(x="math score", y="reading score", hue="parental level of education", data=df1)
