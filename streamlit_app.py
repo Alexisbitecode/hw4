@@ -21,3 +21,9 @@ st.write("""
 We can see from the graph that students' math and reading scores are positively related to the parental level of education. The higher the parental level of education, the higher grades their kids can get. This quite makes sense since parents play a pretty important role in kids' education.
 """)
 
+# Second table
+df2=df.groupby("test preparation course")[["math score", "reading score"]].mean()
+st.write("Test preparation course & Scores:")
+st.write(df2)
+st.write(""" We can see from the table that if students have taken the test preparation course, they usually will get higher scores in math and reading.""")
+
