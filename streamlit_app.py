@@ -15,3 +15,9 @@ plt.ylabel("Reading Score")
 plt.title("Scatter Plot of Math Score vs. Reading Score (Colored by Parental Education)")
 # Display the plot in Streamlit
 st.pyplot(fig)
+
+# Make some comments
+st.write("""
+We can see from the graph that students' math and reading scores are positively related to the parental level of education. The higher the parental level of education, the higher grades their kids can get. This quite makes sense since parents play a pretty important role in kids' education.
+""")
+
